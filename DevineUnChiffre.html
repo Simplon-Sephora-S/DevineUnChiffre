@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+//////////////////////////////////////////////////
+//Exercice Devine un chiffre
+//Le programme demande de deviner un chiffre entre 0 et 9 en 2 tentatives.
+
+//noprotect
+var hasard = Math.floor(Math.random() * 10);
+console.log(hasard);
+
+
+for(var tentativesReponse=0;tentativesReponse<2;tentativesReponse++){
+  var user = prompt("devine un chiffre entre 0 et 9");
+  user=Number(user);
+if (user===hasard){
+  user = true;
+  console.log("bravo");
+  break;
+}
+
+else {
+  console.log("raté");
+
+}
+
+}
+
+
+
+
+  //////////////////////////////////
+</script>
+  </body>
+</html>
